@@ -4,3 +4,4 @@ variable "demo" {
 output "print" {
   value = var.demo
 }
+variable "empty" {}
