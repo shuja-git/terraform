@@ -21,3 +21,12 @@ variable "boolean" {
   type =  bool
   default = true
 }
+output "printing" {
+  value = var.string
+  }
+output "number" {
+  value = var.number
+}
+output "boolean" {
+  value = var.boolean
+}
