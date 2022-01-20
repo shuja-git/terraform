@@ -1,7 +1,23 @@
-variable "demo" {
-  default = "Hello World"
+#variable "demo" {
+#  default = "Hello World"
+#}
+#output "print" {
+#  value = var.demo
+#}
+#variable "empty" {}
+
+variable "string" {
+  description = "String data type demo"
+  type = string
+  default = "This is String Data type variable"
 }
-output "print" {
-  value = var.demo
+variable "number" {
+  description = "Number data type demo"
+  type = number
+  default = 100
 }
-variable "empty" {}
+variable "boolean" {
+  description = "boolean data type demo"
+  type =  bool
+  default = true
+}
