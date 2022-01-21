@@ -58,7 +58,7 @@
 variable "input1" {}
 variable "input2" {}
 
-output "sample1" {
+output "input1" {
   value = var.input1
 }
 output "sample2" {
