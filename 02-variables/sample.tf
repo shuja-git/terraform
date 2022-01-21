@@ -68,6 +68,6 @@ variable "input_from_shell" {}
 output "shell_print" {
   value = var.input_from_shell
 }
-
+variable "var1" {}
 
 
