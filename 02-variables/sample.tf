@@ -30,26 +30,37 @@
 #output "boolean" {
 #  value = var.boolean
 #}
-#--------------------------Variables of list of values
-variable "demo1" {
-  description = "List of variables"
-  default = [
-    "Hello",
-    1000,
-    true
-  ]
-}
-variable "demo2" {
-  description = "Map values"
-  default = {
-    Course = "DevOps",
-    timing = "6am",
+##--------------------------Variables of list of values
+#variable "demo1" {
+#  description = "List of variables"
+#  default = [
+#    "Hello",
+#    1000,
+#    true
+#  ]
+#}
+#---------------------------Variable of Map i.e., key value
+#variable "demo2" {
+#  description = "Map values"
+#  default = {
+#    Course = "DevOps",
+#    timing = "6am",
+#
+#  }
+#}
+#output "sample1" {
+#  value = var.demo1[0]
+#  }
+#output "sample2" {
+#  value = var.demo2["Course"]
+#}
+#-----------.tfvars
+variable "input1" {}
+variable "input2" {}
 
-  }
-}
 output "sample1" {
-  value = var.demo1[0]
-  }
+  value = var.input1
+}
 output "sample2" {
-  value = var.demo2["Course"]
+  value = var.input2
 }
