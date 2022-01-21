@@ -55,25 +55,34 @@
 #  value = var.demo2["Course"]
 #}
 #-----------.tfvars
-variable "input1" {}
-variable "input2" {}
-
-output "sample1" {
-  value = var.input1
+#variable "input1" {}
+#variable "input2" {}
+#
+#output "sample1" {
+#  value = var.input1
+#}
+#output "sample2" {
+#  value = var.input2
+#}
+#variable "input_from_shell" {}
+#output "shell_print" {
+#  value = var.input_from_shell
+#}
+#variable "var1" {}
+#output "print_var" {
+#  value = var.var1
+#}
+#variable "load_var_tfvars" {}
+#output "new" {
+#  value = var.load_var_tfvars
+#}
+#-----------------------------terraform.tfvars
+variable "value1" {}
+variable "value2" {}
+output "valu1" {
+  value = var.value1
 }
-output "sample2" {
-  value = var.input2
-}
-variable "input_from_shell" {}
-output "shell_print" {
-  value = var.input_from_shell
-}
-variable "var1" {}
-output "print_var" {
-  value = var.var1
-}
-variable "load_var_tfvars" {}
-output "new" {
-  value = var.load_var_tfvars
+output "value2" {
+  value = var.value2
 }
 
