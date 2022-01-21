@@ -64,3 +64,10 @@ output "sample1" {
 output "sample2" {
   value = var.input2
 }
+variable "input_from_shell" {}
+output "shell_print" {
+  value = var.input_from_shell
+}
+
+
+
