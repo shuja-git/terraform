@@ -1,1 +1,1 @@
-load_var_tfvars = 15000
+load_var_tfvars = "one Lakh"
