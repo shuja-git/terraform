@@ -69,5 +69,8 @@ output "shell_print" {
   value = var.input_from_shell
 }
 variable "var1" {}
+output "print_var" {
+  value = var.var1
+}
 
 
