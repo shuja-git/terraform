@@ -72,5 +72,8 @@ variable "var1" {}
 output "print_var" {
   value = var.var1
 }
-
+variable "load_var_tfvars" {}
+output "new" {
+  value = var.load_var_tfvars
+}
 
