@@ -1,6 +1,6 @@
 provider "aws" {
   region = "us-east-1"
-  profile = "dev-profile"
+
 }
 resource "aws_instance" "sample" {
   ami = "ami-04656078adf4aa403"
