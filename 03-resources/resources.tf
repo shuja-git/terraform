@@ -7,5 +7,5 @@ resource "aws_instance" "sample" {
   instance_type = "t3.micro"
 }
 output "out" {
-  value = aws_instance.sample
+  value = aws_instance.sample.public_ip
 }
