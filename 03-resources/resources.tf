@@ -1,7 +1,4 @@
-provider "aws" {
-  region = "us-east-1"
 
-}
 resource "aws_instance" "sample" {
   ami           = "ami-04656078adf4aa403"
   instance_type = "t3.micro"
@@ -34,13 +31,6 @@ resource "aws_security_group" "allow_tls" {
 
   tags = {
     Name = "allow_tls"
-  }
-}
-terraform {
-  backend "s3" {
-    bucket = "terraform-b61"
-    key    = "sample.terraform.tfstate"
-    region = "us-east-1"
   }
 }
 
