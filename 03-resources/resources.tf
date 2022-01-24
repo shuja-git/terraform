@@ -36,5 +36,11 @@ resource "aws_security_group" "allow_tls" {
     Name = "allow_tls"
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "terraform-b61"
+    key    = "sample.terraform.tfstate"
+    region = "us-east-1"
+  }
+}
 
-#-------------------------------------
